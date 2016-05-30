@@ -9,7 +9,7 @@
     	/**
     	 * URL of your feed
     	 */
-    	.constant('FEED_URL','http://www.feedforall.com/feed-7.gif')
+    	.constant('FEED_URL','https://github.com/DabitNG.atom')
     	/**
     	 * Feed Reader Controller
     	 */
@@ -22,13 +22,11 @@
 		 * @return 
 		 */
 		function feedReader($scope, FeedReaderSrvc, FEED_URL){
-			// Uncomment below if you need
-			// $scope.posts = [];
+			$scope.posts = [];
 			// Get Feed object from FeedReaderSrvc.read(url);
 			FeedReaderSrvc.read(FEED_URL).then(function(data){
 				if(data.responseData != null){
-					// Place your code here. Uncomment below if you need
-					// $scope.posts =  data.responseData.feed.entries;
+					$scope.posts =  data.responseData.feed.entries;
 				}  
 			});	
 		} 

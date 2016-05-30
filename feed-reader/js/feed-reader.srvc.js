@@ -27,20 +27,15 @@
 			return {
 				read: function(url){
 					var defered = $q.defer();
-        			var promise = defered.promise;
-					$http.jsonp(GoogleFeedAPI+ encodeURIComponent(url))
+                    $http.jsonp(GoogleFeedAPI+ encodeURIComponent(url))
             			.success(function(data) {
             				console.log(data);
                				defered.resolve(data);
-            			})
-            			.error(function(err) {
-             				console.log(err);
-               				defered.reject(err);
             			});
-        				return promise;
-					}				
-				}
+                    return defered.promise;
+				}				
 			}
 		}
+	}
 )();
 
