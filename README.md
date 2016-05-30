@@ -5,9 +5,10 @@
 This module provides a feed reader to your Ionic MS app.
 
 ### Installing module
-1. Extract and place menu folder into www/modules.
+1. `git clone https://github.com/DabitNG/ionic-ms-feed-reader-module`
+2. Extract and place feed-reader folder into www/modules.
 2. Go to module-injector.js file under www/modules/main and add `feed-reader` dependency.
-3. (If not ussing Gulp with Ionic MS) Add the following scrips after module-injector.js in your index.tml
+3. (If not ussing Gulp) Add the following scrips after module-injector.js in your index.tml
 
   ```
   <script src="modules/feed-reader/module.js"></script>
