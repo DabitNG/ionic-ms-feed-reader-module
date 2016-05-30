@@ -15,7 +15,18 @@ This module provides a feed reader to your Ionic MS app.
   <script src="modules/feed-reader/js/feed-reader.srvc.js"></script>
   ```
   
-4. Modify `modules/feed-reader/js/feed-reader.ctrl.js`, uncomment `$scope` lines to expose to your view, or add your code for another implementations.
+4. Place the following code into your template's `<ion-content>`
+  
+  ```
+  <ion-list ng-controller="FeedReaderCtrl">
+    <ion-item ng-repeat="post in posts">
+      <div>
+        <h2>{{post.title}}</h2>
+        <p>{{post.content}}</p>
+      </div>
+    </ion-item>
+  </ion-list>
+  ```
 
 ### Support or Contact
 Having trouble with this module? Contact with [autor](https://github.com/DabitNG)
