@@ -1,0 +1,1 @@
+angular.module('feed-reader', ['feed-reader.controllers']);
