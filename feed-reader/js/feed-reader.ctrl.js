@@ -1,7 +1,7 @@
 /**
- *  Feed Reader controllers module. Feed Reader services required as dependency. 
- *  @author DabitNG 
- */
+*  Feed Reader controllers module. Feed Reader services required as dependency. 
+*  @author DabitNG 
+*/
 
 (function() {
 
@@ -28,7 +28,7 @@
 	*/
 	function feedReader($scope, FeedReaderSrvc, FEED_URL){
 		$scope.posts = [];
-	// Get Feed object from FeedReaderSrvc.read(url);
+		// Get Feed object from FeedReaderSrvc.read(url);
 		FeedReaderSrvc.read(FEED_URL).then(function(data){
 			if(data.responseData != null){
 				$scope.posts =  data.responseData.feed.entries;
