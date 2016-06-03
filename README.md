@@ -29,6 +29,20 @@ This module provides a feed reader to your Ionic MS app.
     </ion-item>
   </ion-list>
   ```
+### Test results
+
+```
+[18:37:31] Starting 'test'...
+[03 06 2016 18:37:31.391:INFO [karma]: [Karma v0.13.22 server started at http://localhost:9876/
+[03 06 2016 18:37:31.396:INFO [launcher]: [Starting browser PhantomJS
+[03 06 2016 18:37:32.851:INFO [PhantomJS 2.1.1]: [Connected on socket /#-A7A6kpZS8Ff7-qjAAAA with id 5002135
+PhantomJS 2.1.1: Executed 0 of 2 SUCCESS (0 secs / 0 secs)
+[2KPhantomJS 2.1.1]: Executed 1 of 2 SUCCESS (0 secs / 0.015 secs)
+[2KPhantomJS 2.1.1]: Executed 2 of 2 SUCCESS (0 secs / 0.016 secs)
+[2KPhantomJS 2.1.1]: Executed 2 of 2 SUCCESS (0.002 secs / 0.016 secs)
+[18:37:32] Finished 'test' after 1.68 s
+
+```
 
 ### Support or Contact
 Having trouble with this module? Contact with [autor](https://github.com/DabitNG)
