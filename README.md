@@ -15,8 +15,9 @@ This module provides a feed reader to your Ionic MS app.
   <script src="modules/feed-reader/js/feed-reader.ctrl.js"></script>
   <script src="modules/feed-reader/js/feed-reader.srvc.js"></script>
   ```
-  
-4. Place the following code into your template's `<ion-content>`
+4. Modify gulpfile.js sass task. Replace gulp.dest() with `./www/modules/main/css/'` path. This will create a css folder with ionic.app.css and ionic.app.min.css inside main module.
+5. Run `gulp sass` and `gulp index`
+6. Place the following code into your template's `<ion-content>`
   
   ```
   <ion-list ng-controller="FeedReaderCtrl">
